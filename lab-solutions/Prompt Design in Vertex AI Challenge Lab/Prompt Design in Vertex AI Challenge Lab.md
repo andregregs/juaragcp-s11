@@ -23,6 +23,7 @@ Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juar
 | Write a tagline for an eco-friendly rain jacket designed for families that makes them feel connected. Consider styles like playful, with a touch of humor. | Explore More, Worry Less. Weather the fun together! |
 
 ![Add Examples](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/Add%20Examples.png)
+
 4. Pilih Model `gemini-1.5-pro-001` dan Region Sesuai di Task 2.
 5. Masukkan Text ini `Write a tagline for a lightweight tent designed for seasoned explorers that makes them feel free. Consider styles like poetic.`.
 6. Ubah Prompt Name menjadi `Cymbal Tagline Generator Template`.
