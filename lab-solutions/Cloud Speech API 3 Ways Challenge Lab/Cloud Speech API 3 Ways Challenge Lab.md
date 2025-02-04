@@ -11,8 +11,8 @@ export ZONE=$(gcloud compute instances list lab-vm --format 'csv[no-heading](zon
 gcloud compute ssh lab-vm --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet
 ```
 
-*Pada bagian Search, ketik `Credentials`
-*Tekan `CREATE CREDENTIALS` lalu pilih API key.
+* Pada bagian Search, ketik `Credentials`
+* Tekan `CREATE CREDENTIALS` lalu pilih API key.
 
 ```
 export API_KEY=
