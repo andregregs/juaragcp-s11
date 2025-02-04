@@ -7,7 +7,7 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 ### Run the following Commands in CloudShell
 
 ```
-curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/refs/heads/main/lab-solutions/Prepare%20Data%20for%20ML%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/script.sh
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prepare%20Data%20for%20ML%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/script.sh
 
 sudo chmod +x script.sh
 ```
