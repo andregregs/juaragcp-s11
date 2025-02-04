@@ -8,10 +8,14 @@
 3. Masukkan nama Bucket, lihat di Task 1.
 4. Tekan **CREATE**.
 5. Tekan **CONFIRM**.
+
 ```
-curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/refs/heads/main/lab-solutions/Get%20Started%20with%20Sensitive%20Data%20Protection%20Challenge%20Lab/script-1.sh
+export ZONE=
+```
+```
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/refs/heads/main/lab-solutions/The%20Basics%20of%20Google%20Cloud%20Compute%20Challenge%20Lab/script.sh
 
-sudo chmod +x script-1.sh
+sudo chmod +x script.sh
 
-./script-1.sh
+./script.sh
 ```
