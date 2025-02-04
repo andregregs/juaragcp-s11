@@ -11,7 +11,7 @@ gcloud compute ssh lab-vm --project=$DEVSHELL_PROJECT_ID --zone=$ZONE --quiet```
 
 *Pada bagian Search, ketik `Credentials`
 *Tekan `CREATE CREDENTIALS` lalu pilih API key.
-*
+
 ```
 export API_KEY=
 export task_2_file_name=""
