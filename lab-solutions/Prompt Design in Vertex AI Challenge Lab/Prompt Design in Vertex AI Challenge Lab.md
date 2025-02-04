@@ -13,7 +13,7 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/Cymbal%20Product%20Analysis.png)
 
 1. Masuk ke `Freeform` [disini](https://console.cloud.google.com/vertex-ai/studio/freeform) atau melalui Vertex AI > Prompt Managemeng > Create Prompt > Freeform.
-2. Copy text ini dan masukkan `System Instruction`:
+2. Copy text ini dan masukkan System Instruction:
 ```Cymbal Direct is partnering with an outdoor gear retailer. They're launching a new line of products designed to encourage young people to explore the outdoors. Help them create catchy taglines for this product line.```
 3. Tekan Add Examples dan copy text ini:
 
@@ -23,3 +23,7 @@ Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juar
 | Write a tagline for an eco-friendly rain jacket designed for families that makes them feel connected. Consider styles like playful, with a touch of humor. | Explore More, Worry Less. Weather the fun together! |
 
 ![Add Examples](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/Add%20Examples.png)
+4. Pilih Model `gemini-1.5-pro-001` dan Region Sesuai di Task 2.
+5. Masukkan Text ini `Write a tagline for a lightweight tent designed for seasoned explorers that makes them feel free. Consider styles like poetic.`.
+6. Run Prompt.
+7. Turn Off Auto Save kemudian Save file dengan nama `Cymbal Tagline Generator Template`.
