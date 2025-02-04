@@ -6,12 +6,12 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 ## 🚀 **Steps to Execute in Cloud Shell:**
 ### Run the following Commands in CloudShell
 
-Cari Zone di bagian **Challenge scenario** lalu masukkan ke command *export ZONE*
+Cari Region di bagian Pop up lalu masukkan ke command *export REGION*
 ```
-export ZONE=
+export REGION=
 ```
 ```
-curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/refs/heads/main/lab-solutions/The%20Basics%20of%20Google%20Cloud%20Compute%20Challenge%20Lab/script.sh
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/refs/heads/main/lab-solutions/Build%20a%20Multi-Modal%20GenAI%20Application%20Challenge%20Lab/script.sh
 
 sudo chmod +x script.sh
 
