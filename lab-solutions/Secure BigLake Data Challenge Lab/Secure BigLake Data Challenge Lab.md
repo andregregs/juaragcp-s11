@@ -2,7 +2,7 @@
 
 
 ### 🚀 **Steps to Execute in Cloud Shell:** 
-
+Salin nilai USER_2 yang berada dalam tanda kurung pada Task 3, lalu jalankan perintah berikut:
 ```
  export USER_2=
 ```
