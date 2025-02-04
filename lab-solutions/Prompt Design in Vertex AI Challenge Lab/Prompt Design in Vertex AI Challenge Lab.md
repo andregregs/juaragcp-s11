@@ -29,3 +29,5 @@ Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juar
 6. Ubah Prompt Name menjadi `Cymbal Tagline Generator Template`.
 7. Run Prompt.
 8. Turn Off Auto Save kemudian Save file.
+
+Tampilan dari Task 2 ![Task 2](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/Cymbal%20Tagline%20Generator%20Template.png)
