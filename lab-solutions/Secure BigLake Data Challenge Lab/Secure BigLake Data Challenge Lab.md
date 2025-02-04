@@ -7,9 +7,10 @@
  export USER_2=
 ```
 ```
-curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/refs/heads/main/Secure%20BigLake%20Data%20Challenge%20Lab/arc129.sh
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Secure%20BigLake%20Data%20Challenge%20Lab/script.sh
 
-sudo chmod +x arc129.sh
+sudo chmod +x script.sh
 
-./arc129.sh
+./script.sh
+
 ```
