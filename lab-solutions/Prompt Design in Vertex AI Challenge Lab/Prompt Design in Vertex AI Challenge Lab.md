@@ -14,8 +14,7 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 
 Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/Cymbal%20Product%20Analysis.png)
 
-### ***Task 2***
-
+### **Task 2**
 1. Masuk ke `Freeform` [disini](https://console.cloud.google.com/vertex-ai/studio/freeform) atau melalui Vertex AI > Prompt Managemeng > Create Prompt > Freeform.
 2. Copy text ini dan masukkan System Instruction:
 ```Cymbal Direct is partnering with an outdoor gear retailer. They're launching a new line of products designed to encourage young people to explore the outdoors. Help them create catchy taglines for this product line.```
@@ -35,3 +34,9 @@ Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juar
 8. Turn Off Auto Save kemudian Save file.
 
 Tampilan dari Task 2 ![Task 2](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/Cymbal%20Tagline%20Generator%20Template.png)
+
+### **Task 3**
+1. Masuk ke Workbench [disini](https://console.cloud.google.com/vertex-ai/workbench/instances) atau melalui Vertex AI > Workbench.
+2. Pada bagian Instances, tekan `OPEN JUPYTERLAB`.
+3. Download File 
+
