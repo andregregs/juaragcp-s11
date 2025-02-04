@@ -3,15 +3,18 @@
 
 ## 🚀 **Steps to Execute in Cloud Shell:**
 ### Run the following Commands in CloudShell
-Salin nilai USER_2 yang berada dalam tanda kurung pada Task 3, lalu jalankan perintah berikut:
 ```
- export USER_2=
-```
-```
-curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/refs/heads/main/lab-solutions/Secure%20BigLake%20Data%20Challenge%20Lab/script.sh
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/blob/main/lab-solutions/Get%20Started%20with%20Sensitive%20Data%20Protection%20Challenge%20Lab/script-1.sh
 
-sudo chmod +x script.sh
+sudo chmod +x script-1.sh
 
-./script.sh
+./script-1.sh
+```
+```
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/blob/main/lab-solutions/Get%20Started%20with%20Sensitive%20Data%20Protection%20Challenge%20Lab/script-2.sh
+
+sudo chmod +x script-2.sh
+
+./script-2.sh
 
 ```
