@@ -16,8 +16,6 @@ Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juar
 2. Copy text ini dan masukkan `System Instruction`:
 ```Cymbal Direct is partnering with an outdoor gear retailer. They're launching a new line of products designed to encourage young people to explore the outdoors. Help them create catchy taglines for this product line.```
 3. Tekan Add Examples dan copy text ini:
-# Add Examples
-
 | Input                                                                                                                                     | Output                                             |
 |-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Write a tagline for a durable backpack designed for hikers that makes them feel prepared. Consider styles like minimalist.                 | Built for the Journey: Your Adventure Essentials.  |
