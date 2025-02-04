@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Function to get input from the user
 get_input() {
     local prompt="$1"
