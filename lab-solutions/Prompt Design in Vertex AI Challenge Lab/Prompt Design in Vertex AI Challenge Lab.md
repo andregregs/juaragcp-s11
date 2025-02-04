@@ -38,5 +38,7 @@ Tampilan dari Task 2 ![Task 2](https://raw.githubusercontent.com/andregregs/juar
 ### **Task 3**
 1. Masuk ke Workbench [disini](https://console.cloud.google.com/vertex-ai/workbench/instances) atau melalui Vertex AI > Workbench.
 2. Pada bagian Instances, tekan `OPEN JUPYTERLAB`.
-3. Download File [image-analysis.ipynb](https://github.com/andregregs/juaragcp-s11/blob/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/image-analysis.ipynb)
-
+3. Download File [image-analysis.ipynb](https://github.com/andregregs/juaragcp-s11/blob/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/image-analysis.ipynb) dan file [tagline-generator](https://github.com/andregregs/juaragcp-s11/blob/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/tagline-generator.ipynb).
+4. Upload kedua file tersebut di Jupyterlab.
+5. Jalankan file `image-analysis.ipynb` terlebih dahulu dan ubah PROJECT ID dan location sesuai dengan yg ada di instruksi.
+6. Jalankan file `tagline-generator.ipynb`.
