@@ -21,3 +21,5 @@ Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juar
 |-------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | Write a tagline for a durable backpack designed for hikers that makes them feel prepared. Consider styles like minimalist.                 | Built for the Journey: Your Adventure Essentials.  |
 | Write a tagline for an eco-friendly rain jacket designed for families that makes them feel connected. Consider styles like playful, with a touch of humor. | Explore More, Worry Less. Weather the fun together! |
+
+![Add Examples](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/Add%20Examples.png)
