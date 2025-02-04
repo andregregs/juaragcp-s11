@@ -1,4 +1,4 @@
-# Secure BigLake Data: Challenge Lab || [ARC129](https://www.cloudskillsboost.google/focuses/64458?parent=catalog) ||
+# [Secure BigLake Data: Challenge Lab](https://www.cloudskillsboost.google/focuses/64458?parent=catalog)
 
 ## 💡 Solution [here](https://youtu.be/cX2bsOHifis)
 
