@@ -11,9 +11,7 @@ Cari Region di bagian Pop up lalu masukkan ke command *export REGION*
 export REGION=
 ```
 ```
-curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/refs/heads/main/lab-solutions/Build%20a%20Multi-Modal%20GenAI%20Application%20Challenge%20Lab/script.sh
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/lab-solutions/master/Build%20a%20Multi-Modal%20GenAI%20Application%20Challenge%20Lab/script.sh
 
-sudo chmod +x script.sh
-
-./script.sh
+source script.sh
 ```
