@@ -4,7 +4,7 @@
 ## 🚀 **Steps to Execute in Cloud Shell:** 
 ### Run the following Commands in CloudShell
 ```
-curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/refs/heads/main/Secure%20Software%20Delivery%20Challenge%20Lab/gsp521.sh
+curl -LO raw.https://github.com/andregregs/juaragcp-s11/blob/main/lab-solutions/Secure%20Software%20Delivery%20Challenge%20Lab/script.sh
 
 sudo chmod +x gsp521.sh
 
