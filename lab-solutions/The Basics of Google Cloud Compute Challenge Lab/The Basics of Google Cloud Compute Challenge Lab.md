@@ -9,6 +9,8 @@
 5. Tekan **CONFIRM**.
 
 ### Run the following Commands in CloudShell
+
+Cari Zone di bagian **Challenge scenario** lalu masukkan ke command *export ZONE*
 ```
 export ZONE=
 ```
