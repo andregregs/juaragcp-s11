@@ -38,4 +38,4 @@ Tampilan dari Task 2 ![Task 2](https://raw.githubusercontent.com/andregregs/juar
 ### **Task 3**
 1. Masuk ke Workbench [disini](https://console.cloud.google.com/vertex-ai/workbench/instances) atau melalui Vertex AI > Workbench.
 2. Pada bagian Instances, tekan `OPEN JUPYTERLAB`.
-3. Download File ![`image-analysis.ipynb`](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/image-analysis.ipynb)
+3. Download File ![`image-analysis.ipynb`](https://github.com/andregregs/juaragcp-s11/raw/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/image-analysis.ipynb)
