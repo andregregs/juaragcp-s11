@@ -25,3 +25,7 @@ sudo chmod +x script-2.sh
 ./script-2.sh
 
 ```
+1. Klik Unstructured Data Template URL yang muncul di terminal.
+2. Pada bagian Configure de-identification, tekan **Transformation Rule**.
+3. Pada InfoTypes to transform, pilih **Any detected infoTypes defined in an inspection template or inspect config that are not specified in other rules**
+4. Tekan Save untuk menyimpan konfigurasi.
