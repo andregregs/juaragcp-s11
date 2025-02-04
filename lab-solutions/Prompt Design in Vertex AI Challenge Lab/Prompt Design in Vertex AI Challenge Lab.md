@@ -25,5 +25,6 @@ Tampilan dari Task 1 ![Task 1](https://raw.githubusercontent.com/andregregs/juar
 ![Add Examples](https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Prompt%20Design%20in%20Vertex%20AI%20Challenge%20Lab/Add%20Examples.png)
 4. Pilih Model `gemini-1.5-pro-001` dan Region Sesuai di Task 2.
 5. Masukkan Text ini `Write a tagline for a lightweight tent designed for seasoned explorers that makes them feel free. Consider styles like poetic.`.
-6. Run Prompt.
-7. Turn Off Auto Save kemudian Save file dengan nama `Cymbal Tagline Generator Template`.
+6. Ubah Prompt Name menjadi `Cymbal Tagline Generator Template`.
+7. Run Prompt.
+8. Turn Off Auto Save kemudian Save file.
