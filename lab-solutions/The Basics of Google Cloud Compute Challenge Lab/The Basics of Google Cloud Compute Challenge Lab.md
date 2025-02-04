@@ -2,13 +2,13 @@
 
 
 ## 🚀 **Steps to Execute in Cloud Shell:**
-### Run the following Commands in CloudShell
 1. Di Pencarian, cari **Buckets**.
 2. Tekan **CREATE BUCKET**.
 3. Masukkan nama Bucket, lihat di Task 1.
 4. Tekan **CREATE**.
 5. Tekan **CONFIRM**.
 
+### Run the following Commands in CloudShell
 ```
 export ZONE=
 ```
