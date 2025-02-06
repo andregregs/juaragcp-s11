@@ -41,10 +41,7 @@ export GOOGLE_APPLICATION_CREDENTIALS=${PWD}/sample-sa-key.json
 
 wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/analyze-images-v2.py
 
-if [[ "$LOCAL" == *"en"* ]]; then
-    sed -i "s/'en'/'${LOCAL}'/g" analyze-images-v2.py
-elif [[ "$LOCAL" == *"ja"* ]]; then
-    sed -i "s/'ja'/'${LOCAL}'/g" analyze-images-v2.py
+sed -i "s/'en'/'${LOCAL}'/g" analyze-images-v2.py
 
 python3 analyze-images-v2.py
 
