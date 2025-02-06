@@ -6,14 +6,19 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 ## 🚀 **Steps to Execute in Cloud Shell:**
 ### Run the following Commands in CloudShell
 
+Copy Processor Name di Task 2
 ```
 export PROCESSOR=
 ```
 ```
-curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/script.sh
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Automate%20Data%20Capture%20at%20Scale%20with%20Document%20AI%20Challenge%20Lab/script.sh
 
 sudo chmod +x script.sh
 
 ./script.sh
 
 ```
+Solusi Task 4 tidak centang hijau:
+* Search Cloud Run Function
+* Hapus Document yg sudah di deploy
+* Jalankan lagi code di Task 4
