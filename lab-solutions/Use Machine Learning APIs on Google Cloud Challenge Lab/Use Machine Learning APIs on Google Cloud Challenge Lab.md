@@ -13,7 +13,7 @@ export BQ_ROLE=
 export STORAGE_ROLE=
 ```
 ```
-curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/lab-solutions/main/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/script.sh
+curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/script.sh
 
 sudo chmod +x script.sh
 
