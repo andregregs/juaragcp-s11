@@ -39,7 +39,7 @@ gcloud iam service-accounts keys create sample-sa-key.json --iam-account sample-
 
 export GOOGLE_APPLICATION_CREDENTIALS=${PWD}/sample-sa-key.json
 
-wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Secure%20BigLake%20Data%20Challenge%20Lab/script.sh
+wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/lab-solutions/main/Secure%20BigLake%20Data%20Challenge%20Lab/script.sh
 
 if [[ "$LOCAL" == *"en"* ]]; then
     sed -i "s/'en'/'${LOCAL}'/g" analyze-images-v2.py
