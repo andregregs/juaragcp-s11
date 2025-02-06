@@ -6,6 +6,8 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 ## 🚀 **Steps to Execute in Cloud Shell:**
 ### Run the following Commands in CloudShell
 
+Catatan : Harus mendapatkan bahasa English atau Japan, jika mendapatkan France silahkan start lab lagi.
+
 ```
 export LANG=
 export LOCAL=
