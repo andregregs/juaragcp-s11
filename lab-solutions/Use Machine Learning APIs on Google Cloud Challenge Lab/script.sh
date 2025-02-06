@@ -39,7 +39,7 @@ gcloud iam service-accounts keys create sample-sa-key.json --iam-account sample-
 
 export GOOGLE_APPLICATION_CREDENTIALS=${PWD}/sample-sa-key.json
 
-wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/lab-solutions/main/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/script.sh
+wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/script.sh
 
 if [[ "$LOCAL" == *"en"* ]]; then
     sed -i "s/'en'/'${LOCAL}'/g" analyze-images-v2.py
