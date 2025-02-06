@@ -1,5 +1,3 @@
-export LOCAL=
-
 #!/bin/bash
 # Define color variables
 
