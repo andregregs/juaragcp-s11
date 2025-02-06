@@ -5,7 +5,7 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 
 ## 🚀 **Steps to Execute in Cloud Shell:**
 ### Run the following Commands in CloudShell
-Salin nilai USER_2 yang berada dalam tanda kurung pada Task 3, lalu jalankan perintah berikut:
+
 ```
 export LANG=
 export LOCAL=
