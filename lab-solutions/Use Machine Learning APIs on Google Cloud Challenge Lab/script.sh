@@ -47,7 +47,6 @@ if [[ "$LOCAL" == *"en"* ]]; then
     sed -i "s/'en'/'${LOCAL}'/g" analyze-images-v2.py
 elif [[ "$LOCAL" == *"ja"* ]]; then
     sed -i "s/'ja'/'${LOCAL}'/g" analyze-images-v2.py
-fi
 
 python3 analyze-images-v2.py
 
