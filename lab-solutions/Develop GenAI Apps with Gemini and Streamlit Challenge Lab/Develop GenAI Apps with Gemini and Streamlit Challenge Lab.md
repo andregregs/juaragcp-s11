@@ -73,5 +73,6 @@ gcloud run deploy "$SERVICE_NAME" \
   --region=$REGION \
   --platform=managed  \
   --project=$PROJECT \
-  --set-env-vars=GCP_PROJECT=$PROJECT,GCP_REGION=$REGION```
+  --set-env-vars=GCP_PROJECT=$PROJECT,GCP_REGION=$REGION
+```
 
