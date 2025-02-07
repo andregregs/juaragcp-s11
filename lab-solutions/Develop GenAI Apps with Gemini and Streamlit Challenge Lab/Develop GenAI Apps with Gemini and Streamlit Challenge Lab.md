@@ -64,6 +64,8 @@ AR_REPO='chef-repo'
 SERVICE_NAME='chef-streamlit-app' 
 gcloud artifacts repositories create "$AR_REPO" --location="$REGION" --repository-format=Docker
 gcloud builds submit --tag "$REGION-docker.pkg.dev/$PROJECT/$AR_REPO/$SERVICE_NAME"
+python3 -m venv gemini-streamlit
+source gemini-streamlit/bin/activate
 python3 -m  pip install -r requirements.txt
 pip install streamlit google-cloud-aiplatform google-cloud-logging
 
