@@ -31,9 +31,9 @@ gsutil cp gs://spls/gsp517/chef.py .
 
 rm -rf Dockerfile chef.py
 
-wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/lab-solutions/main/Develop%20GenAI%20Apps%20with%20Gemini%20and%20Streamlit%20Challenge%20Lab/Dockerfile.txt
+wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Develop%20GenAI%20Apps%20with%20Gemini%20and%20Streamlit%20Challenge%20Lab/Dockerfile.txt
 
-wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/lab-solutions/main/Develop%20GenAI%20Apps%20with%20Gemini%20and%20Streamlit%20Challenge%20Lab/chef.py
+wget https://raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Develop%20GenAI%20Apps%20with%20Gemini%20and%20Streamlit%20Challenge%20Lab/chef.py
 
 mv Dockerfile.txt Dockerfile
 
