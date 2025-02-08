@@ -44,8 +44,7 @@ export PROJECT="$DEVSHELL_PROJECT_ID"
 
 python3 -m venv gemini-streamlit
 source gemini-streamlit/bin/activate
-python3 -m  pip install -r requirements.txt
-pip install streamlit google-cloud-aiplatform google-cloud-logging
+python3 -m pip install -r requirements.txt google-cloud-aiplatform
 
 
 streamlit run chef.py \
