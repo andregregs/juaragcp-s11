@@ -41,17 +41,21 @@ gcloud storage cp chef.py gs://$DEVSHELL_PROJECT_ID-generative-ai/
 
 export PROJECT="$DEVSHELL_PROJECT_ID"
 
-
 python3 -m venv gemini-streamlit
 source gemini-streamlit/bin/activate
-python3 -m pip install -r requirements.txt google-cloud-aiplatform
 
+# Tambahkan google-cloud-aiplatform ke requirements.txt hanya jika belum ada
+grep -qxF "google-cloud-aiplatform" requirements.txt || echo "google-cloud-aiplatform" >> requirements.txt
+
+# Install semua dependensi termasuk google-cloud-aiplatform
+python3 -m pip install -r requirements.txt
 
 streamlit run chef.py \
   --browser.serverAddress=localhost \
   --server.enableCORS=false \
   --server.enableXsrfProtection=false \
   --server.port 8080
+
 ```
 
 * Klik link Streamlit di Terminal
