@@ -13,4 +13,4 @@ sudo chmod +x script.sh
 
 ./script.sh
 ```
-* Jika **TASK 2** tidak bisa centang hijau, run ulang script.
+* Jika ada **TASK** yg tidak bisa centang hijau, run ulang script.
