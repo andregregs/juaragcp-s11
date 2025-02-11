@@ -6,10 +6,6 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 ## 🚀 **Steps to Execute in Cloud Shell:**
 ### Run the following Commands in CloudShell
 
-Copy Processor Name di Task 2
-```
-export PROCESSOR=
-```
 ```
 curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Automate%20Data%20Capture%20at%20Scale%20with%20Document%20AI%20Challenge%20Lab/script.sh
 
