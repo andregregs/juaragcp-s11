@@ -19,10 +19,10 @@ get_input "Enter the BUCKET_URL_2 Task 4:" "BUCKET_URL_2"
 gcloud services enable apikeys.googleapis.com
 
 # Create an API key
-gcloud alpha services api-keys create --display-name="awesome"
+gcloud alpha services api-keys create --display-name="gsp323"
 
 # Retrieve API key name
-KEY_NAME=$(gcloud alpha services api-keys list --format="value(name)" --filter "displayName=awesome")
+KEY_NAME=$(gcloud alpha services api-keys list --format="value(name)" --filter "displayName=gsp323")
 
 # Get API key string
 API_KEY=$(gcloud alpha services api-keys get-key-string $KEY_NAME --format="value(keyString)")
@@ -70,7 +70,7 @@ echo '[
 bq mk --table $DATASET.$TABLE lab.schema
 
 # Run Dataflow job to load data into BigQuery
-gcloud dataflow jobs run awesome-jobs --gcs-location gs://dataflow-templates-$REGION/latest/GCS_Text_to_BigQuery --region $REGION --worker-machine-type e2-standard-2 --staging-location gs://$DEVSHELL_PROJECT_ID-marking/temp --parameters inputFilePattern=gs://cloud-training/gsp323/lab.csv,JSONPath=gs://cloud-training/gsp323/lab.schema,outputTable=$DEVSHELL_PROJECT_ID:$DATASET.$TABLE,bigQueryLoadingTemporaryDirectory=gs://$DEVSHELL_PROJECT_ID-marking/bigquery_temp,javascriptTextTransformGcsPath=gs://cloud-training/gsp323/lab.js,javascriptTextTransformFunctionName=transform
+gcloud dataflow jobs run gsp323-jobs --gcs-location gs://dataflow-templates-$REGION/latest/GCS_Text_to_BigQuery --region $REGION --worker-machine-type e2-standard-2 --staging-location gs://$DEVSHELL_PROJECT_ID-marking/temp --parameters inputFilePattern=gs://cloud-training/gsp323/lab.csv,JSONPath=gs://cloud-training/gsp323/lab.schema,outputTable=$DEVSHELL_PROJECT_ID:$DATASET.$TABLE,bigQueryLoadingTemporaryDirectory=gs://$DEVSHELL_PROJECT_ID-marking/bigquery_temp,javascriptTextTransformGcsPath=gs://cloud-training/gsp323/lab.js,javascriptTextTransformFunctionName=transform
 
 # Grant IAM roles to service account
 gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID \
@@ -92,14 +92,14 @@ gcloud compute networks subnets update default \
     --enable-private-ip-google-access
 
 # Create a service account
-gcloud iam service-accounts create awesome \
+gcloud iam service-accounts create gsp323 \
   --display-name "my natural language service account"
 
 sleep 15
 
 # Generate service account key
 gcloud iam service-accounts keys create ~/key.json \
-  --iam-account awesome@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
+  --iam-account gsp323@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com
 
 sleep 15
 
@@ -108,7 +108,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/home/$USER/key.json"
 
 sleep 30
 
-gcloud auth activate-service-account awesome@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com --key-file=$GOOGLE_APPLICATION_CREDENTIALS
+gcloud auth activate-service-account gsp323@${GOOGLE_CLOUD_PROJECT}.iam.gserviceaccount.com --key-file=$GOOGLE_APPLICATION_CREDENTIALS
 
 
 # Run ML entity analysis
@@ -224,7 +224,7 @@ gcloud auth login --no-launch-browser --quiet
 
 # Step 35: Create a new Dataproc cluster
 echo "Creating Dataproc cluster"
-gcloud dataproc clusters create awesome --enable-component-gateway --region $REGION --master-machine-type e2-standard-2 --master-boot-disk-type pd-balanced --master-boot-disk-size 100 --num-workers 2 --worker-machine-type e2-standard-2 --worker-boot-disk-type pd-balanced --worker-boot-disk-size 100 --image-version 2.2-debian12 --project $DEVSHELL_PROJECT_ID
+gcloud dataproc clusters create gsp323 --enable-component-gateway --region $REGION --master-machine-type e2-standard-2 --master-boot-disk-type pd-balanced --master-boot-disk-size 100 --num-workers 2 --worker-machine-type e2-standard-2 --worker-boot-disk-type pd-balanced --worker-boot-disk-size 100 --image-version 2.2-debian12 --project $DEVSHELL_PROJECT_ID
 
 # Step 36: Get the VM instance name from the project
 echo "Fetching VM instance name"
@@ -245,7 +245,7 @@ gcloud compute ssh --zone "$ZONE" "$VM_NAME" --project "$DEVSHELL_PROJECT_ID" --
 # Step 40: Submit a Spark job to the Dataproc cluster
 echo "Submitting Spark job to Dataproc"
 gcloud dataproc jobs submit spark \
-  --cluster=awesome \
+  --cluster=gsp323 \
   --region=$REGION \
   --class=org.apache.spark.examples.SparkPageRank \
   --jars=file:///usr/lib/spark/examples/jars/spark-examples.jar \
