@@ -9,12 +9,6 @@ Script dan panduan ini disediakan untuk tujuan edukasi agar Anda dapat memahami 
 Catatan : Harus mendapatkan bahasa English atau Japan, jika mendapatkan France silahkan start lab lagi.
 
 ```
-export LANG=
-export LOCAL=
-export BQ_ROLE=
-export STORAGE_ROLE=
-```
-```
 curl -LO raw.githubusercontent.com/andregregs/juaragcp-s11/main/lab-solutions/Use%20Machine%20Learning%20APIs%20on%20Google%20Cloud%20Challenge%20Lab/script.sh
 
 sudo chmod +x script.sh
