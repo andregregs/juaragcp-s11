@@ -3,74 +3,112 @@
 # 1. Mendapatkan Project ID
 ID="$(gcloud projects list --format='value(PROJECT_ID)')"
 
-# 2. Membuat file Python untuk generate gambar menggunakan Vertex AI
+# 2. Membuat file Python untuk generate bouquet image menggunakan Vertex AI
 cat > GenerateImage.py <<EOF_CP
 import argparse
 import vertexai
 from vertexai.preview.vision_models import ImageGenerationModel
 
-def generate_image(
-    project_id: str, location: str, output_file: str, prompt: str
-):
+def generate_bouquet_image(prompt):
+    """
+    Generate a bouquet image using the imagen-3.0-generate-002 model
+    """
+    project_id = '$ID'
+    location = '$REGION'
+    
     vertexai.init(project=project_id, location=location)
-    model = ImageGenerationModel.from_pretrained("imagegeneration@002")
+    model = ImageGenerationModel.from_pretrained("imagen-3.0-generate-002")
     images = model.generate_images(
         prompt=prompt,
         number_of_images=1,
         seed=1,
         add_watermark=False,
     )
+    
+    # Save image locally
+    output_file = 'bouquet.jpeg'
     images[0].save(location=output_file)
-    return images
+    print(f"Bouquet image saved as: {output_file}")
+    return images, output_file
 
-generate_image(
-    project_id='$ID',
-    location='$REGION',
-    output_file='image.jpeg',
-    prompt='Create an image of a cricket ground in the heart of Los Angeles',
-)
+# Generate bouquet with the specified prompt
+prompt = "Create an image containing a bouquet of 2 sunflowers and 3 roses"
+generate_bouquet_image(prompt)
 EOF_CP
 
 # 3. Menunggu 20 detik
 sleep 20
 
-# 4. Menjalankan skrip GenerateImage.py dua kali
-/usr/bin/python3 /home/student/GenerateImage.py
+# 4. Menjalankan skrip GenerateImage.py untuk membuat bouquet
 /usr/bin/python3 /home/student/GenerateImage.py
 
 # 5. Menunggu 10 detik
 sleep 10
 
-# 6. Membuat file Python untuk generate teks menggunakan Vertex AI
+# 6. Membuat file Python untuk analyze bouquet image menggunakan Vertex AI
 cat > genai.py <<EOF_CP
 import vertexai
 from vertexai.generative_models import GenerativeModel, Part
+import os
 
-def generate_text(project_id: str, location: str) -> str:
+def analyze_bouquet_image(image_path):
+    """
+    Analyze bouquet image and generate birthday wishes using gemini-2.0-flash-001
+    with streaming enabled
+    """
+    project_id = "$ID"
+    location = "$REGION"
+    
     vertexai.init(project=project_id, location=location)
     multimodal_model = GenerativeModel("gemini-2.0-flash-001")
+    
+    # Check if image file exists
+    if not os.path.exists(image_path):
+        print(f"Error: Image file {image_path} not found")
+        return None
+    
+    # Load the local image
+    with open(image_path, 'rb') as img_file:
+        image_data = img_file.read()
+    
+    # Create the prompt for birthday wishes based on the bouquet
+    prompt = """
+    Analyze this bouquet image and generate personalized birthday wishes based on the flowers you see. 
+    Consider the types of flowers, colors, and arrangement to create warm, heartfelt birthday messages 
+    that reference the specific flowers in the bouquet.
+    """
+    
+    # Generate content with streaming enabled
     response = multimodal_model.generate_content(
         [
-            Part.from_uri(
-                "gs://generativeai-downloads/images/scones.jpg", mime_type="image/jpeg"
-            ),
-            "what is shown in this image?",
-        ]
+            Part.from_data(data=image_data, mime_type="image/jpeg"),
+            prompt
+        ],
+        stream=True  # Enable streaming
     )
-    return response.text
+    
+    print("Generated Birthday Wishes (Streaming):")
+    print("-" * 50)
+    
+    full_response = ""
+    for chunk in response:
+        if chunk.text:
+            print(chunk.text, end="", flush=True)
+            full_response += chunk.text
+    
+    print("\n" + "-" * 50)
+    return full_response
 
-project_id = "$ID"
-location = "$REGION"
-
-response = generate_text(project_id, location)
-print(response)
+# Analyze the generated bouquet image
+image_path = "/home/student/bouquet.jpeg"
+analyze_bouquet_image(image_path)
 EOF_CP
 
 # 7. Menunggu 20 detik
 sleep 20
 
-# 8. Menjalankan skrip genai.py tiga kali
+# 8. Menjalankan skrip genai.py untuk analyze bouquet
 /usr/bin/python3 /home/student/genai.py
-sleep 5
-/usr/bin/python3 /home/student/genai.py
-/usr/bin/python3 /home/student/genai.py
+
+# 9. Create log file to confirm completion
+echo "Bouquet analysis completed at $(date)" > /home/student/analysis_log.txt
