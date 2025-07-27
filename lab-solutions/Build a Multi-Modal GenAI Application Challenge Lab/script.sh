@@ -48,7 +48,7 @@ from vertexai.generative_models import GenerativeModel, Part
 
 def generate_text(project_id: str, location: str) -> str:
     vertexai.init(project=project_id, location=location)
-    multimodal_model = GenerativeModel("gemini-1.0-pro-vision")
+    multimodal_model = GenerativeModel("gemini-2.0-flash-001")
     response = multimodal_model.generate_content(
         [
             Part.from_uri(
